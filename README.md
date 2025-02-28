@@ -1,4 +1,4 @@
-![](https://komarev.com/ghpvc/?username=aarnav-hariramani&color=black)
+![](https://komarev.com/ghpvc/?username=aarnav-hariramani&color=blue)
 
 ## Hi there 👋
 
