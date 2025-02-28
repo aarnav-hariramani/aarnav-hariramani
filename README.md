@@ -1,3 +1,5 @@
+![](https://komarev.com/ghpvc/?username=aarnav-hariramani&color=black)
+
 ## Hi there 👋
 
 <!--
