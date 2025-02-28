@@ -5,7 +5,6 @@
 
 Here are some ideas to get you started:
 
-![](https://komarev.com/ghpvc/?username=aarnav-hariramani)
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
