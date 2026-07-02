@@ -22,25 +22,6 @@
 
 <!-- ─────────────────────────── MODEL CARD ─────────────────────────── -->
 
-## 🧬 Model Card: `aarnav-hariramani`
-
-> I build LLM evaluation frameworks, hardware-accelerated ML backends, and quant models — then I benchmark everything, including this README.
-
-<div align="center">
-
-| 📊 Benchmark | 📈 Result |
-|:---|:---|
-| NEATJudge accuracy improvement (LLM-as-Judge, w/ eBay Research) | **+14.13%** |
-| Test-case volume reduction via combinatorial reduction @ IBM | **−92%** |
-| Routing latency cut in NVIDIA-award-winning hackathon project | **~10×** |
-| NEAT generation runtime reduction (Dockerized Linux exec) | **−31.22%** |
-| Alpha forecast accuracy improvement (FFT + seasonal decomposition) | **+2.63%** |
-| Vector retrieval over 49,470 products (FAISS, 384-dim embeddings) | **<100 ms** |
-
-</div>
-
-<br/>
-
 <!-- ─────────────────────────── CURRENTLY ─────────────────────────── -->
 
 
