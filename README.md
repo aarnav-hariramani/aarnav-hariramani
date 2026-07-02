@@ -6,7 +6,8 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Aarnav%20Hariramani&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%20Systems%20%C2%B7%20LLM%20Research%20%C2%B7%20Quant&descAlignY=55&descSize=18" width="100%"/>
+<!-- Animated neural-network gradient title — swap template for: hologram, data-stream, quantum-field, glitch-cyber, cyberpunk -->
+<img src="https://gradient-svg-generator.vercel.app/api/svg?text=AARNAV%20HARIRAMANI&template=neural-network&height=150" width="100%" alt="Aarnav Hariramani"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=800&color=36BCF7&center=true&vCenter=true&width=650&lines=Software+Developer+Intern+%40+IBM+%E2%80%94+AI+Enablement;Bringing+LLMs+to+machines+older+than+my+parents;CS+%40+Stevens+'27+%C2%B7+3.8+GPA;I+make+models+that+judge+other+models" alt="Typing SVG" />
 
@@ -55,10 +56,6 @@ license: open to collaboration
 
 <br/>
 
-<!-- ─────────────────────────── CURRENTLY ─────────────────────────── -->
-
-
-
 <!-- ─────────────────────────── TECH STACK ─────────────────────────── -->
 
 <div align="center">
@@ -92,9 +89,6 @@ license: open to collaboration
 </div>
 
 <br/>
-
-<!-- ─────────────────────────── FEATURED WORK ─────────────────────────── -->
-
 
 <!-- ─────────────────────────── STATS ─────────────────────────── -->
 
@@ -131,6 +125,6 @@ license: open to collaboration
 > loss converging... shipping continues.
 ```
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" width="100%"/>
+<img src="https://gradient-svg-generator.vercel.app/api/svg?text=&template=data-stream&height=60" width="100%"/>
 
 </div>
