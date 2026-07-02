@@ -26,20 +26,6 @@
 
 > I build LLM evaluation frameworks, hardware-accelerated ML backends, and quant models — then I benchmark everything, including this README.
 
-```yaml
-model_name: aarnav-hariramani
-version: 3.8          # also my GPA
-architecture: Human (CS major, Stevens Institute of Technology '27)
-current_checkpoint: IBM — Software Developer Intern, AI Enablement (Poughkeepsie, NY)
-training_data:
-  - PyTorch internals & accelerator kernels (IBM Spyre / Spyre-Torch, open source)
-  - LLM-as-Judge research w/ eBay NLP Lab (NEATJudge → submitted to ICLR)
-  - Quant modeling @ $1.5M student-managed investment fund
-fine_tuned_on: [multi-agent pipelines, RAG systems, neuroevolution, time-series alpha]
-inference_hardware: too much coffee
-license: open to collaboration
-```
-
 <div align="center">
 
 | 📊 Benchmark | 📈 Result |
