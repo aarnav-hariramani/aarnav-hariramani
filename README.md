@@ -58,10 +58,8 @@
 
 <br/>
 
-<!-- ─────────────────────────── FEATURED WORK ─────────────────────────── -->
-
-
-<!-- ─────────────────────────── STATS ─────────────────────────── -->
+</div>
+<div align="center"><img src="assets/circuit-divider.svg" width="100%" alt="circuit divider"/></div>
 
 ## 📊 Training Metrics
 
