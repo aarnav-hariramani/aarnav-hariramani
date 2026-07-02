@@ -57,26 +57,9 @@ license: open to collaboration
 
 <!-- ─────────────────────────── CURRENTLY ─────────────────────────── -->
 
-## ⚙️ Currently Executing
 
-```python
-class Aarnav:
-    def now(self) -> dict:
-        return {
-            "🔭 building":  "AI enablement tooling for IBM Z + full backprop support in Spyre-Torch",
-            "🧪 research":  "LLM-as-Judge frameworks & evolutionary prompt/data selection",
-            "🌱 learning":  "accelerator kernel enablement, agentic pipelines (Apache Burr)",
-            "🏆 proud_of":  "Best Communication Data Tool award — LEAP × NVIDIA hackathon",
-            "💬 ask_about": ["RAG", "NEAT/neuroevolution", "quant modeling", "FAISS", "PyTorch backends"],
-            "⚡ fun_fact":  "I taught an algorithm to grade other AIs. It's a tough critic.",
-        }
-```
-
-<br/>
 
 <!-- ─────────────────────────── TECH STACK ─────────────────────────── -->
-
-## 🛠️ Weights & Frameworks
 
 <div align="center">
 
@@ -112,49 +95,6 @@ class Aarnav:
 
 <!-- ─────────────────────────── FEATURED WORK ─────────────────────────── -->
 
-## 🚀 Selected Runs
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🗺️ Our-ERA — LEAP × NVIDIA Hackathon
-Multi-objective climate-aware routing engine over a real NYC street network (**2,264 nodes / 7,609 edges**), weighting length × flood × heat × AQI × grade × shade. Unified 5 datasets into one weighted graph, added an LLM natural-language routing layer.
-🏆 *Best Communication Data Tool — awarded by NVIDIA*
-
-`Python` `NetworkX` `OSMnx` `Streamlit` `Ollama`
-
-</td>
-<td width="50%" valign="top">
-
-### 🔎 FAISS Semantic RAG Chatbot
-GPU-accelerated semantic search over **49,470 products** with MiniLM embeddings compressed to a **72.5 MB** index → **sub-100 ms** retrieval, wired into a Llama-3.3-70B conversational RAG app. One-command Docker deploy.
-
-`Python` `FAISS` `Llama 3.3` `Streamlit` `Docker`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### ⚖️ NEATJudge — w/ eBay Research
-First-of-its-kind **LLM-as-Judge** framework using neuroevolution (NEAT) for automated prompt + data-subset selection. **+14.13% accuracy**, findings submitted to **ICLR**.
-
-`Python` `C++` `NEAT` `GCP` `AWS S3` `SQL`
-
-</td>
-<td width="50%" valign="top">
-
-### 📈 SSMIF Macro Alpha Models
-Multi-factor macro models forecasting financial-sector returns for a **$1.5M** fund. Built a model-registry microservice (FastAPI + PostgreSQL + ClickHouse + S3) that **cut iteration time 40%**.
-
-`OLS` `CAPM` `RNN` `FastAPI` `ClickHouse`
-
-</td>
-</tr>
-</table>
-
-<br/>
 
 <!-- ─────────────────────────── STATS ─────────────────────────── -->
 
