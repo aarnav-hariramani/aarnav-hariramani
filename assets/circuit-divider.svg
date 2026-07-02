@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 44" width="900" height="44">
+  <!-- ══ CIRCUIT DIVIDER · blue/black · pulse with spark head ══ -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="sparkGlow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- dim base trace on black: a PCB run with right-angle jogs -->
+  <path id="trace"
+    d="M8,22 H120 L134,10 H240 L254,22 H370 L384,34 H510 L524,22 H640 L654,10 H770 L784,22 H892"
+    fill="none" stroke="#0d2438" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- faint steady glow layer -->
+  <path d="M8,22 H120 L134,10 H240 L254,22 H370 L384,34 H510 L524,22 H640 L654,10 H770 L784,22 H892"
+    fill="none" stroke="#36BCF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.12"/>
+
+  <!-- the zap: bright segment racing along the trace (tail behind the spark) -->
+  <path d="M8,22 H120 L134,10 H240 L254,22 H370 L384,34 H510 L524,22 H640 L654,10 H770 L784,22 H892"
+    fill="none" stroke="#36BCF7" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"
+    pathLength="1000" stroke-dasharray="55 945" filter="url(#glow)">
+    <animate attributeName="stroke-dashoffset" values="1055;55" dur="3.2s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- spark riding the head of the pulse -->
+  <g filter="url(#sparkGlow)">
+    <g>
+      <!-- crackle rays -->
+      <g stroke="#7FDBFF" stroke-width="1.1" stroke-linecap="round">
+        <line x1="-5" y1="0" x2="-2.2" y2="0"/>
+        <line x1="2.2" y1="0" x2="5" y2="0"/>
+        <line x1="0" y1="-5" x2="0" y2="-2.2"/>
+        <line x1="0" y1="2.2" x2="0" y2="5"/>
+        <line x1="-3.4" y1="-3.4" x2="-1.6" y2="-1.6"/>
+        <line x1="1.6" y1="1.6" x2="3.4" y2="3.4"/>
+        <line x1="3.4" y1="-3.4" x2="1.6" y2="-1.6"/>
+        <line x1="-1.6" y1="1.6" x2="-3.4" y2="3.4"/>
+        <animate attributeName="opacity" values="1;0.25;1;0.5;1" dur="0.28s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" values="0;45" dur="0.56s" repeatCount="indefinite"/>
+      </g>
+      <!-- hot white core -->
+      <circle r="2.4" fill="#ffffff">
+        <animate attributeName="r" values="2.4;1.7;2.4" dur="0.22s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="4" fill="#36BCF7" opacity="0.35">
+        <animate attributeName="r" values="4;5.5;4" dur="0.32s" repeatCount="indefinite"/>
+      </circle>
+      <animateMotion dur="3.2s" repeatCount="indefinite">
+        <mpath href="#trace"/>
+      </animateMotion>
+    </g>
+  </g>
+
+  <!-- solder pads / via nodes at the jogs -->
+  <g fill="#0d2438" stroke="#36BCF7" stroke-width="1">
+    <circle cx="120" cy="22" r="3"/>
+    <circle cx="240" cy="10" r="3"/>
+    <circle cx="370" cy="22" r="3"/>
+    <circle cx="510" cy="34" r="3"/>
+    <circle cx="640" cy="22" r="3"/>
+    <circle cx="770" cy="10" r="3"/>
+  </g>
+
+  <!-- nodes flicker as the spark passes -->
+  <g fill="#7FDBFF" filter="url(#glow)">
+    <circle cx="120" cy="22" r="2.2" opacity="0.15">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.2s" begin="0.35s" repeatCount="indefinite" keyTimes="0;0.08;1"/>
+    </circle>
+    <circle cx="240" cy="10" r="2.2" opacity="0.15">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.2s" begin="0.8s" repeatCount="indefinite" keyTimes="0;0.08;1"/>
+    </circle>
+    <circle cx="370" cy="22" r="2.2" opacity="0.15">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.2s" begin="1.25s" repeatCount="indefinite" keyTimes="0;0.08;1"/>
+    </circle>
+    <circle cx="510" cy="34" r="2.2" opacity="0.15">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.2s" begin="1.7s" repeatCount="indefinite" keyTimes="0;0.08;1"/>
+    </circle>
+    <circle cx="640" cy="22" r="2.2" opacity="0.15">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.2s" begin="2.15s" repeatCount="indefinite" keyTimes="0;0.08;1"/>
+    </circle>
+    <circle cx="770" cy="10" r="2.2" opacity="0.15">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.2s" begin="2.6s" repeatCount="indefinite" keyTimes="0;0.08;1"/>
+    </circle>
+  </g>
+
+  <!-- terminal pads at each end, like board edge connectors -->
+  <g fill="#0d2438" stroke="#36BCF7" stroke-width="1">
+    <rect x="2" y="17" width="6" height="10" rx="1"/>
+    <rect x="892" y="17" width="6" height="10" rx="1"/>
+  </g>
+</svg>
