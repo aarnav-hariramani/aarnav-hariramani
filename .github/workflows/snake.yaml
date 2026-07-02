@@ -18,7 +18,34 @@ jobs:
         with:
           github_user_name: aarnav-hariramani
           outputs: |
-            dist/github-snake-dark.svg?palette=github-dark&color_dots=#1f6feb,#36BCF7,#58a6ff,#79c0ff,#a5d6ff
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#39d353
+
+      - name: Crop SVG to the contribution grid
+        run: |
+          python3 - << 'PYEOF'
+          import re
+
+          def crop(path):
+              s = open(path).read()
+              cells = re.findall(r'<rect class="c[^"]*" x="(-?[\d.]+)" y="(-?[\d.]+)"', s)
+              if not cells:
+                  print("no cells found, skipping", path); return
+              xs = [float(x) for x, y in cells]; ys = [float(y) for x, y in cells]
+              CELL = 12; PAD = 4
+              minx, maxx = min(xs) - PAD, max(xs) + CELL + PAD
+              miny, maxy = min(ys) - PAD, max(ys) + CELL + PAD
+              ubar = re.findall(r'<rect class="u[^"]*"[^>]*y="(-?[\d.]+)"', s)
+              if ubar:
+                  maxy = max(maxy, max(float(y) for y in ubar) + CELL + PAD)
+              w, h = maxx - minx, maxy - miny
+              s = re.sub(r'viewBox="[^"]+" width="[^"]+" height="[^"]+"',
+                         f'viewBox="{minx:g} {miny:g} {w:g} {h:g}" width="{w:g}" height="{h:g}"',
+                         s, count=1)
+              open(path, 'w').write(s)
+              print(f"{path}: cropped viewBox -> {minx:g} {miny:g} {w:g} {h:g}")
+
+          crop('dist/github-snake-dark.svg')
+          PYEOF
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
