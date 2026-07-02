@@ -76,7 +76,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/aarnav-hariramani/aarnav-hariramani/output/github-snake-dark.svg" alt="contribution snake" />
+<img src="https://raw.githubusercontent.com/aarnav-hariramani/aarnav-hariramani/output/github-snake-dark.svg?v=2" alt="contribution snake" />
 
 </div>
 
