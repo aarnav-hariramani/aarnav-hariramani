@@ -62,15 +62,6 @@
 <div align="center"><img src="assets/circuit-divider.svg" width="100%" alt="circuit divider"/></div>
 
 
-<!-- ─────────────────────────── SNAKE ─────────────────────────── -->
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/aarnav-hariramani/aarnav-hariramani/output/github-snake-dark.svg?v=2" alt="contribution snake" />
-
-</div>
-
-<!-- ─────────────────────────── FOOTER ─────────────────────────── -->
 
 <br/>
 
