@@ -61,16 +61,6 @@
 </div>
 <div align="center"><img src="assets/circuit-divider.svg" width="100%" alt="circuit divider"/></div>
 
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=aarnav-hariramani&show_icons=true&hide_border=true&bg_color=0d1117&title_color=36BCF7&icon_color=36BCF7&text_color=c9d1d9&rank_icon=github" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aarnav-hariramani&layout=compact&hide_border=true&bg_color=0d1117&title_color=36BCF7&text_color=c9d1d9&langs_count=8" />
-
-<img src="https://streak-stats.demolab.com?user=aarnav-hariramani&hide_border=true&background=0d1117&ring=36BCF7&fire=36BCF7&currStreakLabel=36BCF7&sideLabels=c9d1d9&sideNums=c9d1d9&dates=8b949e" />
-
-</div>
-
-<br/>
 
 <!-- ─────────────────────────── SNAKE ─────────────────────────── -->
 
